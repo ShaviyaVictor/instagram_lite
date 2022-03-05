@@ -25,3 +25,14 @@ def register(request) :
 
 
   return render(request, 'users/register.html', {'form': form})
+
+
+
+def profile(request) :
+
+  context = {
+    'title': 'Profile'
+  }
+
+  return render(request, 'blog/profile.html', context)
+

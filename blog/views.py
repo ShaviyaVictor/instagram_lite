@@ -36,14 +36,3 @@ def add_post(request) :
   }
 
   return render(request, 'blog/post.html', context)
-
-
-
-
-def profile(request) :
-
-  context = {
-    'title': 'Profile'
-  }
-
-  return render(request, 'blog/profile.html', context)
