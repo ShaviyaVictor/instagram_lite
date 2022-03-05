@@ -1,4 +1,5 @@
 from django.shortcuts import render
+from .models import Post
 
 
 
@@ -28,8 +29,8 @@ posts = [
 def home(request) :
 
   context = {
-    'posts': posts,
-    'title': 'Home'
+    'posts': Post.objects.all(),
+    'title': 'Home',
   }
 
   return render(request, 'blog/home.html', context)
