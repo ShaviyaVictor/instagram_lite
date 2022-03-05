@@ -39,20 +39,31 @@ def home(request) :
 
 def messenger(request) :
 
+  context = {
+      'posts': posts,
+      'title': 'Messenger'
+    }
 
-
-  return render(request, 'blog/messenger.html', {'title':'Messenger'})
+  return render(request, 'blog/messenger.html', context)
 
 
 
 
 def add_post(request) :
 
-  return render(request, 'blog/post.html')
+  context = {
+    'title': 'Posts'
+  }
+
+  return render(request, 'blog/post.html', context)
 
 
 
 
 def profile(request) :
 
-  return render(request, 'blog/profile.html')
+  context = {
+    'title': 'Profile'
+  }
+
+  return render(request, 'blog/profile.html', context)
