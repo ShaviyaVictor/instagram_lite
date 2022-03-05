@@ -1,5 +1,6 @@
 from django.shortcuts import render
 from django.contrib.auth.forms import UserCreationForm
+from django.contrib import messages
 
 
 
@@ -12,6 +13,8 @@ def register(request) :
     form = UserCreationForm(request.POST)
     if form.is_valid() :
       username = form.cleaned_data.get('username')
+
+      messages.success(request, f'Account successfully created for {username}!')
 
   else :
     form = UserCreationForm()
