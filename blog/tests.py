@@ -18,8 +18,6 @@ class PostTestClass(TestCase) :
   # Testing the posts save functionality
   def test_save_method(self) :
 
-
-
     # Creating a new Post and saving it
     self.new_post = Post(img_title='Test Post', img_caption='This is a random test post', profile=self.josphine)
 
@@ -28,5 +26,20 @@ class PostTestClass(TestCase) :
     all_post = Post.objects.all()
 
     self.assertTrue(len(all_post) > 0)
+
+
+  
+  # # Testing the posts delete functionality
+  # def test_delete_method(self) :
+
+  #   # Creating a new Post and saving it
+  #   self.new_post = Post(img_title='Test Post', img_caption='This is a random test post', profile=self.josphine)
+
+  #   self.new_post.delete_post()
+
+  #   all_post = Post.objects.all()
+
+  #   self.assertTrue(len(all_post) -+1)
+
 
 
