@@ -1,22 +1,18 @@
-<!DOCTYPE html>
-<html>
+{% extends "blog/base.html" %}
 
-  <head>
 
-    {% if title %}
-      <title>Instagram~lite:{{ title }}/title>
-    {% else %}
-      <title>Post Page</title>
-    {% endif %}
 
-  </head>
 
-  <body>
+{% block content %}
+
     
-    <h1>
-      Blog Add Post Page!
-    </h1>
 
-  </body>
 
-</html>
+  <h1>
+    Blog Post Page!
+  </h1>
+
+
+
+  
+{% endblock content %}
