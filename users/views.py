@@ -5,7 +5,7 @@ from django.contrib.auth.forms import UserCreationForm
 
 # Create your views here.
 
-def reigister(request) :
+def register(request) :
   form = UserCreationForm()
 
 
