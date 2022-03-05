@@ -31,14 +31,20 @@
     <header class="site-header">
       <nav class="navbar navbar-expand-md navbar-light bg-steel fixed-top border-bottom">
         <div class="container">
-          <a class="navbar-brand mr-4" href="{% url 'blog-home' %}">
+          <a class="navbar-brand mr-5" href="{% url 'blog-home' %}">
             Instagram-Lite
           </a>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggle" aria-controls="navbarToggle" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarToggle">
-            <div class="navbar-nav mr-auto">
+            <form class="d-flex ml-5">
+              <input class="form-control me-2" type="search" placeholder="Find a photo..." aria-label="Search">
+              <button class="btn btn-outline-light" type="submit">
+                <i class="bi bi-search"></i>
+              </button>
+            </form>
+            <div class="navbar-nav mr-auto ml-5">
               <a class="nav-item nav-link ml-4" href="{% url 'blog-home' %}">
                 Home
               </a>
