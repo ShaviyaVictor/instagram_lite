@@ -1,28 +1,28 @@
 from django.shortcuts import render
-from django.http import HttpResponse
-
 
 
 
 # Create your views here.
 def home(request) :
 
-  return HttpResponse('<h1>Blog Home</h1>')
+  return render(request, 'blog/home.html')
 
 
 
 def messenger(request) :
 
-  return HttpResponse('<h1>Blog Messenger</h1>')
+  return render(request, 'blog/messenger.html')
+
 
 
 
 def add_post(request) :
 
-  return HttpResponse('<h1>Blog Post</h1>')
+  return render(request, 'blog/post.html')
+
 
 
 
 def profile(request) :
 
-  return HttpResponse('<h1>Blog Profile</h1>')
+  return render(request, 'blog/profile.html')
