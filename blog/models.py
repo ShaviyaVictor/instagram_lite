@@ -14,3 +14,10 @@ class Post(models.Model) :
   profile = models.ForeignKey(User, on_delete=models.CASCADE)
   date_posted = models.DateTimeField(default=timezone.now)
 
+
+
+  def __str__(self) -> str:
+      return self.date_posted
+
+  class Meta :
+    ordering = ['-date_posted']
