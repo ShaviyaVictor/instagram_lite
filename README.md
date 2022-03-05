@@ -1,8 +1,8 @@
-# Instagram Clone
+# Instagram Lite
 
 This is a clone of Instagram where people share their images and videos for other users to view. Users can sign up, login, view and post photos, search and follow other users.     
 Below is the project's screenshot:     
-![Instagram_Clone_Screenshot](#)
+![Instagram_Lite_Screenshot](#)
 
 
 #### Live link to site
@@ -58,7 +58,7 @@ Use pip to install Django inside your vrtual environment:
 $ pip install django
 ```
 
-SetUp your database User,Password, Host then make migratet:
+SetUp your database User,Password, Host then make migration:
 
 ```
 $ python manage.py makemigrations instagram_project
@@ -104,7 +104,7 @@ Follow along with this [Deployment Documentation](https://gist.github.com/newton
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE.md](https://github.com/ShaviyaVictor/instagram_clone/blob/main/LICENSE) file for details.
+This project is licensed under the MIT License - see the [LICENSE.md](https://github.com/ShaviyaVictor/instagram_lite/blob/main/LICENSE) file for details.
 
 ## Acknowledgments
 
