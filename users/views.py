@@ -34,5 +34,5 @@ def profile(request) :
     'title': 'Profile'
   }
 
-  return render(request, 'blog/profile.html', context)
+  return render(request, 'users/profile.html', context)
 
