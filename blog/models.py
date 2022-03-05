@@ -21,3 +21,6 @@ class Post(models.Model) :
 
   class Meta :
     ordering = ['-date_posted']
+
+  def save_post(self) :
+    self.save()
