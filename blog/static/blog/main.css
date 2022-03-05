@@ -113,11 +113,8 @@ a.article-title:hover {
 /* Styling the footer section */
 
 footer {
-  position: fixed;
-  bottom: 0;
-  left: 0;
+  
   width: 100%;
-  background-color: #451F25;
   padding: 0.3em;
 }
 
@@ -131,8 +128,8 @@ footer {
 
 .futa {
   margin: 1em;
-  color: #C7C7A9 !important;
-  font-size: 1.3em;
+  color: #000 !important;
+  font-size: 1em;
 }
 
 a {
@@ -140,7 +137,7 @@ a {
 }
 
 .futa:hover {
-  color: #fff !important;
+  color: #444444 !important;
 }
 
 
