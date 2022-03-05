@@ -1,10 +1,12 @@
 from django.shortcuts import render
 from .models import Post
+from django.contrib.auth.decorators import login_required
 
 
 
 
 # Create your views here.
+@login_required
 def home(request) :
 
   context = {
@@ -16,7 +18,7 @@ def home(request) :
 
 
 
-
+@login_required
 def messenger(request) :
 
   context = {
@@ -28,7 +30,7 @@ def messenger(request) :
 
 
 
-
+@login_required
 def add_post(request) :
 
   context = {
