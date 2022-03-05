@@ -12,6 +12,8 @@ def register(request) :
 
     form = UserCreationForm(request.POST)
     if form.is_valid() :
+      form.save()
+
       username = form.cleaned_data.get('username')
 
       messages.success(request, f'Account successfully created for {username}!')
