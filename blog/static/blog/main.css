@@ -35,8 +35,17 @@ ul {
   color: #000 !important;
 }
 
+.bi-search {
+  color: #000;
+  border: #dddddd;
+}
+
 .site-header .navbar-nav .nav-link.active {
   font-weight: 500;
+}
+
+.icons {
+  font-size: 1.5em;
 }
 
 .content-section {
