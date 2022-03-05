@@ -1,6 +1,6 @@
 {% extends "blog/base.html" %}
 
-
+{% load crispy_forms_tags %}
 
 
 {% block content %}
@@ -17,7 +17,7 @@
               Register to get started
             </legend>
 
-            {{ form.as_p }}
+            {{ form | crispy }}
 
         </fieldset>
 
