@@ -17,7 +17,7 @@ class Post(models.Model) :
 
 
   def __str__(self) -> str:
-      return self.date_posted
+      return self.img_title
 
   class Meta :
     ordering = ['-date_posted']
