@@ -15,3 +15,5 @@ class UserRegisterForm(UserCreationForm) :
       'password1',
       'password2',
     ]
+
+

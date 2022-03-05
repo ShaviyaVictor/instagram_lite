@@ -1,0 +1,3 @@
+Hello {{username}}
+
+Welcome to Instagram Lite Application. You will find the safest place to keep safe and share your favourite photos with your friends.

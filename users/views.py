@@ -2,6 +2,8 @@ from django.shortcuts import render, redirect
 from django.contrib import messages
 from .forms import UserRegisterForm
 from django.contrib.auth.decorators import login_required
+from .email import send_welcome_email
+from .models import NewsLetterRecipients
 
 
 
@@ -16,6 +18,13 @@ def register(request) :
       form.save()
 
       username = form.cleaned_data.get('username')
+
+      email = form.cleaned_data.get('email')
+
+      recipient = NewsLetterRecipients(username=username, email=email)
+      recipient.save()
+      send_welcome_email(username, email)
+
 
       messages.success(request, f'Account successfully created for {username}! Login to continue.')
 
@@ -37,4 +46,6 @@ def profile(request) :
   }
 
   return render(request, 'users/profile.html', context)
+
+
 
