@@ -13,6 +13,8 @@ class Post(models.Model) :
   img_caption = models.CharField(max_length=500)
   profile = models.ForeignKey(User, on_delete=models.CASCADE)
   date_posted = models.DateTimeField(default=timezone.now)
+  likes = models.ManyToManyField(User, blank=True, related_name='likes')
+  dislikes = models.ManyToManyField(User, blank=True, related_name='dislikes')
 
 
 
