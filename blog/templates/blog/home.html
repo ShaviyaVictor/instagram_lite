@@ -15,7 +15,9 @@
           <small class="text-muted">{{ post.date_posted | date:"D, d M Y" }}</small>
         </div>        
         <!-- <h2><a class="article-title" href="#">{{ post.img_title }}</a></h2> -->
-        <img class="post-img" src="{{ post.image.url }}" alt="{{ post.img_title }}" style="border-radius: 5px; margin: 0.8em;">
+        <a href="{% url 'post-detail' post.id %}">
+          <img class="post-img" src="{{ post.image.url }}" alt="{{ post.img_title }}" style="border-radius: 5px; margin: 0.8em;">
+        </a>
         <p class="article-content mt-2">{{ post.img_caption }}</p>
         <!-- <div>
           <small>{{ post.likes }}</small>
