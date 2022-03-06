@@ -70,8 +70,8 @@ a.article-title:hover {
 }
 
 .article-img {
-  height: 65px;
-  width: 65px;
+  height: 40px;
+  width: 40px;
   margin-right: 16px;
 }
 
@@ -97,6 +97,11 @@ a.article-title:hover {
   width: 125px;
   margin-right: 20px;
   margin-bottom: 16px;
+}
+
+.post-img {
+  height: 10em;
+  width: 10em;
 }
 
 /* .account-heading {
