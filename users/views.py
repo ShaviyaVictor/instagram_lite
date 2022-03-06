@@ -50,7 +50,7 @@ def profile(request) :
       u_form.save()
       p_form.save()
 
-      messages.success(request, f'Your account has been updated.')
+      messages.success(request, f'Your account has been updated successfully.')
 
       return redirect('profile')
 
