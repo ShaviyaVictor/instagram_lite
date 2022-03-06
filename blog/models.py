@@ -1,6 +1,7 @@
 from django.db import models
 from django.contrib.auth.models import User
 from django.utils import timezone
+from django.urls import reverse
 
 
 
@@ -15,12 +16,15 @@ class Post(models.Model) :
   date_posted = models.DateTimeField(default=timezone.now)
   likes = models.ManyToManyField(User, blank=True, related_name='likes')
   dislikes = models.ManyToManyField(User, blank=True, related_name='dislikes')
-  image = models.ImageField(upload_to='Images', null=True)
+  image = models.ImageField(upload_to='Images', default='default.jpg')
 
 
 
   def __str__(self) -> str:
       return self.img_title
+
+  def get_absolute_url(self) :
+    return reverse('post-detail', kwargs={'pk': self.pk})
 
   class Meta :
     ordering = ['-date_posted']
