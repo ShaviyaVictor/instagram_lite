@@ -1,0 +1,30 @@
+{% extends "blog/base.html" %}
+
+
+
+
+  {% block content %}
+
+
+    <article class="media content-section">
+      <img class="rounded-circle article-img" src="{{ object.profile.profile.profile_img.url }}" alt="">
+      <div class="media-body">
+        <div class="article-metadata">
+          <a class="mr-2" href="#">{{ object.profile }}</a>
+          <small class="text-muted">{{ object.date_posted | date:"D, d M Y" }}</small>
+        </div>        
+        <h2><a class="article-title" href="#">{{ object.img_title }}</a></h2>
+        <img class="post-img" src="{{ post.image.url }}" alt="{{ post.img_title }}" style="border-radius: 5px; margin: 0.8em;">
+        <p class="article-content mt-2">{{ object.img_caption }}</p>
+        <!-- <div>
+          <small>{{ post.likes }}</small>
+          <small>{{ post.dislikes }}</small>
+        </div> -->
+      </div>      
+    </article>
+
+
+
+
+
+  {% endblock content %}
