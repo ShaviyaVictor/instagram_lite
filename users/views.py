@@ -1,6 +1,6 @@
 from django.shortcuts import render, redirect
 from django.contrib import messages
-from .forms import UserRegisterForm
+from .forms import UserRegisterForm, UserUpdateForm, ProfileUpdateForm
 from django.contrib.auth.decorators import login_required
 from .email import send_welcome_email
 from .models import NewsLetterRecipients
@@ -41,8 +41,14 @@ def register(request) :
 @login_required
 def profile(request) :
 
+  u_form = UserUpdateForm()
+  p_form = ProfileUpdateForm()
+
   context = {
-    'title': 'Profile'
+    'title': 'Profile',
+    'u_form': u_form,
+    'p_form': p_form
+
   }
 
   return render(request, 'users/profile.html', context)
