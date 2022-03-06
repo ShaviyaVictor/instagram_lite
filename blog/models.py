@@ -15,7 +15,7 @@ class Post(models.Model) :
   date_posted = models.DateTimeField(default=timezone.now)
   likes = models.ManyToManyField(User, blank=True, related_name='likes')
   dislikes = models.ManyToManyField(User, blank=True, related_name='dislikes')
-  image = models.ImageField(upload_to='Images/')
+  image = models.ImageField(upload_to='Images', null=True)
 
 
 
@@ -27,6 +27,7 @@ class Post(models.Model) :
 
   def save_post(self) :
     self.save()
+
 
 
 
