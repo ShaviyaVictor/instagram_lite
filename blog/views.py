@@ -39,6 +39,12 @@ class PostCreateView(CreateView) :
 
   model = Post
 
+  fields = [
+    'img_title',
+    'img_caption',
+    'image'
+  ]
+
 
 
 
