@@ -2,7 +2,9 @@
 
 This is a clone of Instagram where people share their images and videos for other users to view. Users can sign up, login, view and post photos, search and follow other users.     
 Below is the project's screenshot:     
-![Instagram_Lite_Screenshot](#)
+![Instagram_Lite_Home.Pg_Screenshot](https://github.com/ShaviyaVictor/instagram_lite/blob/main/media/Screenshot/Screenshot-Home.png)
+![Instagram_Lite_Profile.Pg_Screenshot](https://github.com/ShaviyaVictor/instagram_lite/blob/main/media/Screenshot/Screenshot-Profile.png)
+![Instagram_Lite_AddPost.Pg_Screenshot](https://github.com/ShaviyaVictor/instagram_lite/blob/main/media/Screenshot/Screenshot-Add%20Post.png)
 
 
 #### Live link to site
@@ -12,7 +14,7 @@ The project was deployed to Heroku and GitHub pages for publication.
 
 ## Application Setup Instructions
 - Open Terminal {Ctrl+Alt+T}     
-- git clone [instagram_project](#)      
+- git clone [instagram_project](https://github.com/ShaviyaVictor/instagram_lite)      
 - cd instagram_project      
 - code . or atom . based on the text editor you have.
 
