@@ -1,0 +1,1 @@
+web: gunicorn instagram_lite_project.wsgi
